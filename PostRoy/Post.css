@@ -160,34 +160,3 @@ body {
   list-style-type: none;
   padding: 0;
 }
-
-.tips ul li {
-  margin-bottom: 10px;
-}
-
-.footer {
-  flex-shrink: 0; /* Evitar que se reduzca */
-  padding: 20px;
-  background: #f5f6f7;
-}
-
-.footer button {
-  background: #3b49df;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  margin-left: 99px;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.save-draft-btn,
-.revert-btn {
-  background: #666;
-}
-.col-auto {
-  -ms-flex: 0 0 auto;
-  flex: 1 0 auto;
-  width: auto;
-  max-width: 100%;
-}
