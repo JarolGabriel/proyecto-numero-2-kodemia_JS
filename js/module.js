@@ -23,7 +23,7 @@ const createPost = async (postObject) => {
 
 /* dont' touch */
 
-export { getAllPosts, createPost, BASE_URL };
+export { getAllPosts, createPost };
 
 /**
  ==========codigo de jarol Gabriel==========
@@ -123,7 +123,7 @@ buttomTop.addEventListener("click", async () => {
 
 // Event listener para el campo de búsqueda
 document.getElementById("searchInput").addEventListener("input", async () => {
-  const keyword = document.getElementById("searchInput").value;
+  const keyword = document.getElementById("searcput").valuehIn;
   const posts = await getAllPosts2();
   const filteredPosts = filterByTitle(posts, keyword);
   renderCards(filteredPosts);
@@ -132,3 +132,53 @@ document.getElementById("searchInput").addEventListener("input", async () => {
 
 // exporta funciones
 export { getAllPosts2, buttomImport, buttomUltimo, buttomTop, renderCards };
+
+//==============tags =====
+
+// Función para crear y renderizar una tarjeta (card)
+const crearListTags = (post) => {
+  const cardContainer = document.getElementById("list-container");
+
+  const ul = document.createElement("ul");
+  ul.className = "list-group";
+
+  // Título principal de la tarjeta
+  const liTitulo = document.createElement("li");
+  liTitulo.className = "list-group-item disabled";
+  liTitulo.setAttribute("aria-disabled", "true");
+  const titulo = document.createElement("p");
+  titulo.className = "list-group-hover fw-bold fs-5";
+  titulo.textContent = "#conversar";
+  const descripcion = document.createElement("p");
+  descripcion.className = "fs-12 mb-0";
+  descripcion.textContent = "Hilos de discusión dirigidos a toda la comunidad";
+  liTitulo.appendChild(titulo);
+  liTitulo.appendChild(descripcion);
+  ul.appendChild(liTitulo);
+
+  // Crear lista de tags
+  post.tags.slice(0, 4).forEach((tag) => {
+    const li = document.createElement("li");
+    li.className = "list-group-item";
+    const span = document.createElement("span");
+    span.className = "list-group-hover fs-6";
+    span.textContent = `#${tag}`;
+    const p = document.createElement("p");
+    p.className = "fs-12 mb-0";
+    p.textContent = "sjd"; // Aquí puedes reemplazar con otro dato de tu post si es necesario
+    li.appendChild(span);
+    li.appendChild(p);
+    ul.appendChild(li);
+  });
+
+  cardContainer.appendChild(ul);
+};
+
+// Función para obtener y renderizar los datos de Firebase
+const printAllPostsTags = async () => {
+  const posts = await getAllPosts2();
+  posts.forEach((post) => crearListTags(post));
+};
+
+// Llamar a la función principal que inicia todo
+printAllPostsTags();

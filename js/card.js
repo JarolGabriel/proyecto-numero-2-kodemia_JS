@@ -17,8 +17,6 @@ let userArray = [];
 const cargarCardsDesdeFirebase = async () => {
   const posts = await getAllPosts();
   posts.forEach((post) => {
-    // Convertir la propiedad tag en un array
-    const tagsArray = post.tag.split(",").map((tag) => tag.trim());
     //console.log("esto es un tag", tagsArray);
     // Crear un nuevo objeto para cada post
     ObjetoUser = {
@@ -29,7 +27,7 @@ const cargarCardsDesdeFirebase = async () => {
       importance: post.importance,
       picture: post.picture,
       reacciones: post.reacciones,
-      tags: tagsArray,
+      tags: post.tag,
       title: post.title,
     };
 
