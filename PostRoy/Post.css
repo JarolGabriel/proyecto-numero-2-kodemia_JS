@@ -160,3 +160,7 @@ body {
   list-style-type: none;
   padding: 0;
 }
+.ml-3,
+.mx-3 {
+  margin-left: 6rem !important;
+}

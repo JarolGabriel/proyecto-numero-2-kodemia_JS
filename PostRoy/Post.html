@@ -1,102 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Publicación</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="Post.css" />
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crear Publicación</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="Post.css" />
-  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
-  <!-- Add Firebase products that you want to use -->
-  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
-</head>
-
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="row align-items-center justify-content-between">
-        <div class="col-auto d-flex align-items-center">
-          <img
-            src="https://media.dev.to/cdn-cgi/image/quality=100/https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
-            alt="Logo" class="header-logo" />
-          <h1 class="header-title">Crear publicación</h1>
-        </div>
-        <div class="col-auto">
-          <button class="btn header-edit-btn publish-btn">Editar</button>
-          <button class="btn header-edit-btn publish-btn">Avance</button>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-auto d-flex align-items-center">
+            <img
+              src="https://media.dev.to/cdn-cgi/image/quality=100/https://dev-to-uploads.s3.amazonaws.com/uploads/logos/resized_logo_UQww2soKuUsjaOGNB38o.png"
+              alt="Logo"
+              class="header-logo"
+            />
+            <h1 class="header-title">Crear publicación</h1>
+          </div>
+          <div class="col-auto">
+            <button class="btn header-edit-btn publish-btn">Editar</button>
+            <button class="btn header-edit-btn publish-btn">Avance</button>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="container main-container">
-    <div class="row">
-      <section class="col-md-8 post-creation">
-        <crayons-textfield>
-          <input class="post-picture" type="text" placeholder="agregar imagen..." />
-        </crayons-textfield>
+    <main class="container main-container">
+      <div class="row">
+        <section class="col-md-8 post-creation">
+          <crayons-textfield>
+            <input
+              class="post-picture"
+              type="text"
+              placeholder="agregar imagen..."
+            />
+          </crayons-textfield>
 
-        <input type="file" id="cover-image-input" style="display: none" />
+          <input type="file" id="cover-image-input" style="display: none" />
 
-        <crayons-textfield>
-          <input class="post-title" type="text" placeholder="Nuevo título de publicación aquí..."
-            style="font-weight: bold" />
-        </crayons-textfield>
+          <crayons-textfield>
+            <input
+              class="post-title"
+              type="text"
+              placeholder="Nuevo título de publicación aquí..."
+              style="font-weight: bold"
+            />
+          </crayons-textfield>
 
-        <div class="tag-container">
-          <input class="post-tags" type="text" placeholder="Añade hasta 4 etiquetas..." />
-        </div>
+          <div class="tag-container">
+            <input
+              class="post-tags"
+              type="text"
+              placeholder="Añade hasta 4 etiquetas..."
+            />
+          </div>
 
-        <div class="date-field">
-          <label for="post-date"></label>
-          <input id="post-date" class="post-date" type="date" />
-        </div>
+          <div class="date-field">
+            <label for="post-date"></label>
+            <input id="post-date" class="post-date" type="date" />
+          </div>
 
-        <div class="editor-toolbar">
-          <button class="toolbar-btn bold-btn">B</button>
-          <button class="toolbar-btn italic-btn">I</button>
-          <button class="toolbar-btn link-btn">🔗</button>
-          <button class="toolbar-btn list-btn">🔢</button>
-          <button class="toolbar-btn quote-btn">“”</button>
-          <button class="toolbar-btn code-btn">❲❳</button>
-          <button class="toolbar-btn lightning-btn">⚡</button>
-          <button class="toolbar-btn image-btn">🖼️</button>
-          <button class="toolbar-btn more-btn">⋮</button>
-        </div>
+          <div class="editor-toolbar">
+            <button class="toolbar-btn bold-btn">B</button>
+            <button class="toolbar-btn italic-btn">I</button>
+            <button class="toolbar-btn link-btn">🔗</button>
+            <button class="toolbar-btn list-btn">🔢</button>
+            <button class="toolbar-btn quote-btn">“”</button>
+            <button class="toolbar-btn code-btn">❲❳</button>
+            <button class="toolbar-btn lightning-btn">⚡</button>
+            <button class="toolbar-btn image-btn">🖼️</button>
+            <button class="toolbar-btn more-btn">⋮</button>
+          </div>
 
-        <textarea class="post-content" placeholder="Escribe el contenido de tu publicación aquí"
-          style="resize: none"></textarea>
-      </section>
+          <textarea
+            class="post-content"
+            placeholder="Escribe el contenido de tu publicación aquí"
+            style="resize: none"
+          ></textarea>
+        </section>
 
-      <aside class="col-md-4 tips">
-        <h2>Cómo escribir un buen título para una publicación</h2>
-        <ul>
-          <li>
-            Piensa en el título de tu publicación como una descripción súper
-            breve (¡pero convincente!), como una descripción general de la
-            publicación real en una oración corta.
-          </li>
-          <li>
-            Utiliza palabras clave cuando sea apropiado para garantizar que
-            las personas puedan encontrar tu publicación mediante la búsqueda.
-          </li>
-        </ul>
-      </aside>
-    </div>
-  </main>
+        <aside class="col-md-4 tips">
+          <h2>Cómo escribir un buen título para una publicación</h2>
+          <ul>
+            <li>
+              Piensa en el título de tu publicación como una descripción súper
+              breve (¡pero convincente!), como una descripción general de la
+              publicación real en una oración corta.
+            </li>
+            <li>
+              Utiliza palabras clave cuando sea apropiado para garantizar que
+              las personas puedan encontrar tu publicación mediante la búsqueda.
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </main>
 
-  <footer class="footer text-center">
-    <div class="btn-container d-flex justify-content-start ml-3">
-      <!-- Añadido ml-3 para margen izquierdo -->
-      <button class="btn publish-btn">Publicar</button>
-      <button class="btn save-draft-btn ml-2">Guardar borrador</button>
-      <button class="btn revert-btn ml-2">Revertir nuevos cambios</button>
-    </div>
-  </footer>
+    <footer class="footer text-center">
+      <div class="btn-container d-flex justify-content-start ml-3">
+        <!-- Añadido ml-3 para margen izquierdo -->
+        <button class="btn btn-primary publish-btn">Publicar</button>
+        <button class="btn btn-primary save-draft-btn ml-2">
+          Guardar borrador
+        </button>
+        <button class="btn btn-primary revert-btn ml-2">
+          Revertir nuevos cambios
+        </button>
+      </div>
+    </footer>
 
-  <script src="Post.js"></script>
-</body>
-
+    <script src="Post.js"></script>
+  </body>
 </html>
