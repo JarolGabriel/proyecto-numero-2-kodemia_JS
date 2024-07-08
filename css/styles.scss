@@ -1,0 +1,553 @@
+$color-button: rgb(47, 58, 178);
+$color-button-transparente: rgb(47, 58, 178, 0.2);
+$color-navbar: rgb(113, 113, 113);
+$font-noto-sans: "Noto Sans", sans-serif;
+
+body {
+  background-color: rgb(242, 242, 242);
+  font-family: $font-noto-sans;
+  margin-top: 70px;
+}
+//estilos de lau
+// Estilos del navHeader
+.container {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.navbar {
+  margin-bottom: 0;
+}
+
+.btn-outline-secondary {
+  background-color: white;
+  color: $color-navbar;
+  border: 1px solid rgb(228, 223, 223);
+  transition: all 0.3s ease;
+}
+.btn-outline-secondary:hover {
+  border: 1px solid black;
+  background-color: white;
+}
+
+.fw-bold1 {
+  .span1 {
+    color: $color-navbar;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  font-size: 20px;
+  margin-right: 400px;
+  color: black;
+  transition: all 0.1s ease;
+}
+.fw-bold1:hover {
+  border-radius: 10px;
+  background-color: rgb(47, 58, 178, 0.2);
+  color: $color-button;
+}
+
+.mr-svg {
+  margin-right: 4px;
+  color: $color-navbar;
+}
+.mr-svg-A {
+  margin-left: 4px;
+  color: $color-navbar;
+}
+
+.cls-1 {
+  height: 15px;
+  width: 15px;
+  fill: rgb(113, 113, 113);
+}
+
+.form-control {
+  width: 500px;
+}
+
+.form-control:focus {
+  border-color: rgb(44, 45, 215);
+  box-shadow: none;
+  border-width: 2px;
+}
+
+.imgProfile {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.imgLogo {
+  width: 60px;
+  height: 40px;
+}
+
+.imgNotifications {
+  width: 35px;
+  height: 35px;
+}
+
+.btn-outline-primary {
+  border-color: rgb(44, 44, 215);
+  color: rgb(44, 45, 215);
+}
+
+.btn-underline:hover {
+  text-decoration: underline;
+  background-color: rgb(44, 46, 214);
+}
+
+.btn-search {
+  border-style: none;
+}
+
+.btn-notifications {
+  border-style: none;
+}
+
+.btn-profile {
+  border-style: none;
+  background: none;
+}
+
+.btn-logo {
+  border-style: none;
+}
+
+.bi {
+  margin-left: 10px;
+  background-color: transparent;
+}
+
+// Estilos del side-right
+
+.hashtagList {
+  margin-bottom: 1rem;
+}
+.cardList {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  .list-group {
+    .list-group-item {
+      a {
+        text-decoration: none;
+        color: rgb(60, 60, 60);
+        font-size: 1rem;
+        &:hover {
+          color: rgb(0, 0, 157);
+        }
+      }
+    }
+  }
+}
+
+#commentsList {
+  font-size: 0.85rem;
+  color: rgb(136, 136, 136);
+  &:hover {
+    color: rgb(136, 136, 136);
+  }
+}
+
+// texto parrafo de la card
+
+#texto-parrafo-hove:hover {
+  color: $color-button;
+}
+
+// estilos de jarol
+
+//parrafo de la primera card
+.texto-bold {
+  font-weight: normal !important;
+}
+
+@mixin btn-style-blue {
+  background-color: white;
+  color: $color-button;
+  border: 1px solid rgb(0, 0, 157);
+  transition: all 0.3s ease;
+}
+
+#boton-card-1 {
+  @include btn-style-blue();
+}
+
+#boton-card-1:hover {
+  background-color: $color-button;
+  color: white;
+  text-decoration: underline;
+}
+#boton-card-1:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+#boton-card-1:hover {
+  background-color: $color-button;
+  cursor: pointer;
+}
+
+#card-aside-left {
+  background-color: rgb(242, 242, 242);
+}
+
+//segundo boton login
+
+@mixin style-botones {
+  margin-top: 5px;
+  margin-right: 10px;
+  text-decoration: none;
+  padding: 5px;
+  color: gray;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#boton-card-2 {
+  @include style-botones();
+}
+
+#boton-card-2:hover {
+  background-color: $color-button-transparente;
+  color: $color-button;
+}
+#boton-card-2:hover {
+  text-decoration: underline;
+  color: rgb(47, 58, 178);
+}
+
+//icom
+
+.bi-social-media:hover {
+  background-color: rgb(47, 58, 178, 0.2);
+  color: $color-button !important;
+}
+
+// letras del final de paginas
+#fw-color-fuerte {
+  color: $color-button;
+  cursor: pointer;
+}
+//colo parrafo
+#color-parrafo {
+  color: $color-navbar;
+}
+
+// parte de la columna del medio las tres palabras
+.hero-hover-palabras {
+  padding: 5px;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hover-palabra-active {
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.hero-hover-palabras:hover {
+  background-color: white;
+  color: $color-button;
+  border-radius: 10px;
+}
+
+.fs-12 {
+  font-size: 12px;
+}
+
+.btn-extra-sm {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.list-gruop-hover {
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.list-gruop-hover:hover {
+  color: rgb(47, 58, 178);
+}
+
+// parte de card del medio
+
+.hero-imagen-perfil {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.car-body-perfil {
+  margin-top: -45px;
+  margin-left: 15px;
+  position: absolute;
+}
+
+.hero-image-badge {
+  height: 30px;
+  width: 30px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.card-title {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.card-title-2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px 10px 10px 20px;
+  margin: 0;
+}
+
+.card-text {
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.card-text:hover {
+  color: rgb(47, 58, 178);
+}
+
+.hero-hastah {
+  margin-top: -10px;
+
+  .btn-custom {
+    font-size: 13px;
+  }
+}
+
+.btn-custom:hover {
+  background-color: rgb(47, 58, 178, 0.2);
+  border: 1px solid rgb(47, 58, 178);
+}
+
+.azul {
+  color: blue;
+}
+.verde {
+  color: greenyellow;
+}
+.rosado {
+  color: pink;
+}
+
+.btn-custom:hover span {
+  text-decoration: underline;
+  color: rgb(47, 58, 178);
+}
+
+@mixin stely-btn {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-secondary {
+  @include stely-btn();
+}
+
+.btn-secondary:hover {
+  background-color: rgb(231, 228, 228);
+}
+
+@mixin stely-emogi {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+.hero-emogi-2 {
+  @include stely-emogi();
+}
+.hero-emogi {
+  @include stely-emogi();
+}
+.hero-emogi-2 {
+  margin-left: -5px;
+}
+
+.hero-11 {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.icon-book {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  font-weight: bold;
+  padding: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.icon-book:hover {
+  background-color: rgb(231, 228, 228);
+}
+
+// parte de medio segunda card
+
+.hero-3-imagen-perfil {
+  margin: 0;
+  line-height: 1;
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}
+
+.hero-3-title-perfil {
+  margin: 0;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: bold;
+}
+.hero-3-date-perfil {
+  margin: 0;
+  line-height: 1;
+  font-size: 12px;
+}
+
+.hero-3-info-hover {
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.hero-3-info-hover:hover {
+  background-color: rgb(224, 224, 224);
+  border-radius: 10px;
+}
+.her-3-foto-name-date {
+  margin: 0;
+  line-height: 1;
+}
+
+.card-text-hero-4 {
+  font-size: 13px;
+  font-weight: 600;
+}
+.card-text-span-hero-4 {
+  font-size: 15px;
+}
+
+.card-text-hero-4-card-2 {
+  color: $color-navbar;
+  font-size: 13px;
+}
+.hero-4-card-2 {
+  color: $color-button;
+  font-weight: bold;
+}
+
+.hero-4-card-3-necati {
+  height: 30px;
+  width: 30px;
+}
+
+//aside right sin borde ni fondo
+
+.hero-hover-palabras {
+  padding: 5px;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hover-palabra-active {
+  font-weight: bold;
+}
+.hero-hover-palabras:hover {
+  background-color: white;
+  color: $color-button;
+  border-radius: 10px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+
+.btn-extra-sm {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.list-gruop-hover {
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.list-gruop-hover:hover {
+  color: rgb(47, 58, 178);
+}
+
+// Seccion 2 segunda parte del hero
+
+.border-0 {
+  background-color: rgb(240, 243, 247);
+}
+
+.card-logo-her0-2 {
+  height: 30px;
+  width: 30px;
+  object-fit: cover;
+}
+
+.bi-three-dots {
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.bi-three-dots:hover {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(231, 225, 225);
+}
+
+.fw-300-C-D {
+  font-size: 13px;
+}
+
+.bi-social-media {
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.bi-social-media:hover {
+  background-color: rgb(47, 58, 178, 0.2);
+}
+
+.font-inconsolas {
+  font-family: "Inconsolata", monospace;
+}
+.list-group-hero-2 {
+  background-color: rgb(240, 243, 247);
+}
+
+.lista-group-item-hero-2:hover {
+  background-color: white;
+}
+
+// pantalla para movil stilos
+
+.color-transparente-movil {
+  background-color: rgba(153, 152, 152, 0.5);
+  height: 100%;
+  padding: 20px;
+}

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <!--Icon de bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!--font google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+  <!--css-->
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Dev to</title>
+</head>
+
+<body>
+  <header class="navComponent">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top ">
+      <div class="container d-flex justify-content between">
+        <div class="container-group1">
+          <div class="container-group1__search d-flex align-items-center">
+            <a href="./menuTLFN.html"><button class="border-0 fs-2  d-block d-sm-none"><i
+                  class="bi bi-list"></i></button></a>
+            <button class="btn-logo"><img class="imgLogo" src="./img/resized_logo.png" alt="
+              logo devto"></button>
+            <nav class="navbar bg-body-tertiary">
+              <div class="container-fluid d-flex align-items-center">
+                <form class="d-flex">
+                  <a href="./searchingNav.html" class="text-decoration-none"><input class=" form-control me-2 d-none
+                    d-sm-block " type=" text" placeholder="    Search..." aria-label="Search"></a>
+                </form>
+              </div>
+            </nav>
+
+          </div>
+        </div>
+        <div class="container-group2 d-flex  align-items-center">
+          <a href="./login.html" target="_blank" rel="noopener noreferrer" class=""><button type="button"
+              id="boton-card-2" class="btn btn-outline-primary border-0 p-2">Log in</button> </a>
+          <button type="button" class="btn btn-outline-primary w-60 fw-bold fs-5" id="boton-card-1">Create
+            Account</button>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3  d-none d-md-block mt-1">
+        <div class="card card-hero-1 mt-3">
+
+          <div class="card-body">
+            <h5 class="card-title fw-bold fs-3">DEV Community is a community of 1,698,517 amazing
+              developers
+            </h5>
+            <p class="card-text fs-5 font-weight-normal texto-bold" id="texto-parrafo-hove">Somos un lugar donde los
+              programadores
+              comparten, se
+              mantienen
+              actualizados <br> y
+              hacen crecer sus carreras.</p>
+            <a href="#" class="btn btn-outline-primary w-100 fw-bold fs-5" id="boton-card-1">Crear cuenta</a>
+            <button type="button" class="btn btn-outline-primary w-100 border-0 mt-3 fs-5" id="boton-card-2">log
+              in</button>
+
+          </div>
+        </div>
+
+        <div class="card border-0 mt-4" id="card-aside-left">
+          <div class=" card-body p-0">
+            <button type="button" class="btn btn-outline-primary border-0 w-100 mt-0 d-flex align-items-center"
+              id="boton-card-2">
+              <p class="mb-0 me-2 fs-4">🏠</p> <span class="text-dark">Hogar</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary border-0 w-100 d-flex align-items-center"
+              id="boton-card-2">
+              <p class="mb-0 me-2 fs-4">🗃️</p><span class="text-dark">Leyendo listas</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary border-0 w-100 d-flex align-items-center"
+              id="boton-card-2">
+              <p class="mb-0 me-2 fs-4">🎙️</p><span class="text-dark">Podcasts</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary border-0 w-100 d-flex align-items-center"
+              id="boton-card-2">
+              <p class="mb-0 me-2 fs-4">📽️</p><span class="text-dark">Videos</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary border-0 w-100 mt-0 d-flex align-items-center"
+              id="boton-card-2">
+              <p class="mb-0 fs-4">💡</p><span class="text-dark">Ayuda</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary border-0 w-100 mt-0 d-flex align-items-center"
+              id="boton-card-2">
+              <p class="mb-0 fs-4">🛍️</p><span class="text-dark">Tienda Forem</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary border-0 w-100 d-flex align-items-center"
+              id="boton-card-2">
+              <p class="mb-0 fs-4">💖</p><span class="text-dark">Anunciate DEV</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary border-0 w-100 d-flex align-items-center"
+              id="boton-card-2">
+              <p class="mb-0 fs-4">🏆</p><span class="text-dark">Desarrollo</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary border-0 w-100 d-flex align-items-center"
+              id="boton-card-2">
+              <p class="mb-0 fs-4">✨</p><span class="text-dark">Exibición</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary border-0 w-100 mt-0 d-flex align-items-center"
+              id="boton-card-2">
+              <img class="img-fluid me-2" src="./img/resized_logo.png" alt="" width="40"><span
+                class="text-dark fs-5">Acerca
+                de</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary border-0 w-100 d-flex align-items-center"
+              id="boton-card-2">
+              <p class="mb-0 fs-4">🌏</p><span class="text-dark">contacto</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary border-0 w-100 d-flex align-items-center"
+              id="boton-card-2">
+              <p class="mb-0 fs-4">📖</p><span class="text-dark">guia</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary border-0 w-100 d-flex align-items-center"
+              id="boton-card-2">
+              <p class="mb-0 fs-4">🤑</p><span class="text-dark">Comparaciones de software</span>
+            </button>
+            <h6 class="fw-bold mt-4 mb-4 fs-5">Otros</h6>
+            <button type="button" class="btn btn-outline-primary border-0 w-100 d-flex align-items-center"
+              id="boton-card-2">
+              <p class="mb-0 fs-4">👍</p><span class="text-dark">Conducta</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary border-0 w-100 d-flex align-items-center"
+              id="boton-card-2">
+              <p class="mb-0 fs-4">🤓</p><span class="text-dark">Privacidad</span>
+            </button>
+            <button type="button" class="btn btn-outline-primary border-0 w-100 d-flex align-items-center"
+              id="boton-card-2">
+              <p class="mb-0 fs-4">👀</p><span class="text-dark">Condiciones</span>
+            </button>
+            <!-- Icom-->
+            <div class="d-flex mt-3">
+              <i class="bi bi-social-media bi-twitter-x btn-outline-primary border-0 btn text-dark fs-4"></i>
+              <i class=" bi bi-social-media bi-facebook btn-outline-primary border-0 btn text-dark fs-4"></i>
+              <i class="bi bi-social-media bi-github btn-outline-primary border-0 btn text-dark fs-4"></i>
+              <i class="bi bi-social-media bi-instagram btn-outline-primary border-0 btn text-dark fs-4"></i>
+              <i class="bi bi-social-media bi-twitch btn-outline-primary border-0 btn text-dark fs-4"></i>
+              <i class="bi bi-social-media bi-mastodon btn-outline-primary border-0 btn text-dark fs-4"></i>
+            </div>
+            <!--Popular Tag -->
+            <h6 class="fw-bold mt-3 mb-3 fs-5">Etiquetas Populares</h6>
+
+            <div class="overflow-auto d-flex flex-column " style="max-height: 400px" data-bs-spy="scroll">
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">#wedbev
+              </p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">
+                #Javascript</p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">
+                #principiantes
+              </p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">
+                #programacion
+              </p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">tutorial
+              </p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">
+                #reaccionar</p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">#piton</p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">#ai</p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">
+                #producttividad
+              </p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">#devops
+              </p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">#fuente
+                abierta
+              </p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">#aws</p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">#conversar
+              </p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">
+                #mecanografia
+              </p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">#css</p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">#carrera
+              </p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">#nodo</p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">
+                #aprendiendo
+              </p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">#noticias
+              </p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">
+                #aprendiendo
+                automatico</p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">#java</p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">#wedbev
+              </p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">#base de
+                datos
+              </p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">#nube</p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">
+                #desarrollo</p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">#interfas
+              </p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">#ciencia
+                de
+                datos</p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">#prueba
+              </p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">
+                #siguientejs
+              </p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">#github
+              </p>
+              <p class="btn btn-outline-primary border-0 rounded text-start text-dark fs-5" id="boton-card-2">#php</p>
+            </div>
+            <!--card dev community-->
+            <div class="card p-3 mb-4 mt-5">
+              <div class="d-flex justify-content-between mt-0">
+                <p class="fw-300-C-D">DEV Community</p>
+                <i class="bi bi-three-dots btn btn-outline-primary border-0 mb-2" id="boton-card-2"></i>
+              </div>
+              <img src="./img/become-a-moderatro.png" class="card-img-top" alt="Become a moderator">
+              <div class="card-body">
+                <p><span class="card-text fs-5 fw-bold">Fill
+                    out this
+                    survey</span><span class="" id="texto-parrafo-hove">and
+                    help us moderate
+                    our community by becoming a tag moderator here at DEV. </span></p>
+
+              </div>
+            </div>
+
+            <div class="card-body p-0" id="card-aside-left">
+              <p class="card-text-hero-4-card-2" id="color-parrafo"><span class="fw-bold fs-5"
+                  id="fw-color-fuerte">Comunidad de
+                  desarrollo</span> Una red social
+                constructiva e inclusiva para desarrolladores de software. Contigo en cada paso
+                de tu viaje.</p>
+              <p class="card-text-hero-4-card-2" id="color-parrafo">Construida sobre<span class="fw-bold fs-5"
+                  id="fw-color-fuerte">Forem</span>- elfuente
+                abiertasoftware que potencia <span class="fw-bold fs-5" id="fw-color-fuerte">DESARROLLO</span> y otras
+                comunidades
+                inclusivas.</p>
+              <p class="card-text-hero-4-card-2" id="color-parrafo">Hecho con amor y<span class="fw-bold fs-5"
+                  id="fw-color-fuerte">Ruby
+                  on
+                  Rails.</span> Comunidad
+                DEV © 2016 - 2024.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-5">
+        <div class=" d-flex text-center gap-3 mt-4">
+          <p class="hero-hover-palabras" id="importante">importante</p>
+          <p class="hero-hover-palabras" id="el-ultimo">El ultimo</p>
+          <p class="hero-hover-palabras" id="top">top</p>
+
+        </div>
+        <div class="card mb-3" id="card-ocultar">
+          <img id="image-importante" src="./img/kubernete.png" class="card-img-top" alt="...">
+          <img id="image-el-ultimo" src="./img/dev-card-morada.png" class="card-img-top hidden" alt="...">
+          <div class="card-body">
+            <div class="hero-card-superposicionar">
+              <div class="card-body d-flex justify-content-start align-items-center ">
+                <img class="hero-image-badge" src="./img/perfil/cuadro-com_uploads_organizat.png" alt="">
+                <h5 class="card-title">Jake Page <span>for</span> Glasskube</h5>
+              </div>
+              <div class="card-body car-body-perfil d-flex justify-content-start align-items-center ">
+                <img class="hero-imagen-perfil " src="./img/perfil/pexels-adreyat-1.jpg" alt="">
+                <h5 class="card-title">May 27</h5>
+              </div>
+
+            </div>
+
+            <p class="card-text">
+              Kubernetes fail compilation: but they keep getting worse
+            </p>
+
+            <div class="hero-hastah">
+              <button type="button" class="btn btn-custom"><span class="azul">#</span>Kubernete</button>
+              <button type="button" class="btn btn-custom"><span class="verde">#</span> devops</button>
+              <button type="button" class="btn btn-custom"><span class="verde">#</span>opensource</button>
+              <button type="button" class="btn btn-custom"><span class="rosado">#</span>learning</button>
+            </div>
+
+            <div class="hero-caras-animaciones d-flex justify-content-center align-items-center ">
+              <button type="button" class="btn btn-secondary btn-lg ">
+                <div class="d-flex justify-content-center align-items-center">
+                  <p class="hero-emogi mb-0">&#129505;</p>
+                  <p class="hero-emogi-2 mb-0">😍</p>
+                  <p class="hero-emogi-2 mb-0"> &#128588;</p>
+                  <p class="hero-emogi-2 mb-0">👽</p>
+                  <p class="hero-emogi-2 mb-0 hero-espacio-left">🦄</p>37
+                  reacciones
+                </div>
+              </button>
+              <button type="button" class="btn btn-secondary btn-lg d-flex">
+                <i class="bi bi-chat"></i>add comentarios</button>
+              <div class="hero-minute d-flex justify-content-center ms-auto">
+
+                <p class="hero-11">11 min read</p>
+                <i class="icon-book bi bi-bookmark"></i>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="card-container">
+
+        </div>
+      </div>
+
+
+
+
+      <div class="col-lg-4 d-none d-md-block mt-4">
+        <ul class="list-group ">
+
+          <li class="list-group-item disabled" aria-disabled="true">
+            <p class="list-gruop-hover fw-bold fs-5 ">#conversar</p>
+            <p class="fs-12 mb-0">Hilos de discucion dirigidos a toda la comunidad</p>
+          </li>
+
+          <li class="list-group-item"><span class="list-gruop-hover fs-6">meme lunes</span>
+            <p class="fs-12 mb-0">40 comentarios</p>
+          </li>
+          <li class="list-group-item"><span class="list-gruop-hover fs-6">Cual es la mejor manera de aprender
+              a pensar como
+              programador?</span>
+            <p class="fs-12 mb-0">2 comentarios</p>
+          </li>
+          <li class="list-group-item ">
+            <div class="row d-flex justify-content-center flex-column ">
+              <p class="fs-6"><span class="azul">#</span>Kubernete</p>
+              <div class="col-md-4">
+                <button type="button" class="btn btn-warning btn-extra-sm mt-2">Nuevo</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item ">
+            <div class="row d-flex justify-content-center flex-column">
+              <p class="fs-6"><span class="azul">#</span>devop</p>
+              <div class="col-md-4">
+                <button type="button" class="btn btn-warning btn-extra-sm mt-2">Nuevo</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item ">
+            <div class="row d-flex justify-content-center flex-column ">
+              <p class="fs-6"><span class="azul">#</span>opensource</p>
+              <div class="col-md-4">
+                <button type="button" class="btn btn-warning btn-extra-sm mt-2">Nuevo</button>
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item ">
+            <div class="row d-flex justify-content-center flex-column ">
+              <p class="fs-6"><span class="azul">#</span>learning</p>
+              <div class="col-md-4">
+                <button type="button" class="btn btn-warning btn-extra-sm mt-2">Nuevo</button>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+        <!--aside right si fondo ni border-->
+
+        <div class="">
+          </ul>
+          <ul class="list-group list-group-hero-2 border-0">
+            <p class="font-inconsolas fw-bold mt-3 fs-4">guia/recursos de tendencia</p>
+            <li class="list-group-item lista-group-item-hero-2 border-0"><span class="list-gruop-hover fs-6">Las 50
+                preguntas
+                principales
+                de
+                la entrevista sobre diseno de sistesmas para 2024</span>
+
+            </li>
+            <li class="list-group-item lista-group-item-hero-2 border-0 mt-3"><span class="list-gruop-hover fs-6">Cinco
+                habilidades que los programadores y desarrolladores
+                deberian aprender en 2024</span>
+            </li>
+            <li class="list-group-item lista-group-item-hero-2 border-0 mt-3"><span
+                class="list-gruop-hover fs-6">Array.reduce() tiene cabra 🐐✨</span>
+            </li>
+            <li class="list-group-item lista-group-item-hero-2 border-0 mt-3"><span
+                class="list-gruop-hover fs-6">Dominar el diseno de bases de datos relacionales: una guia
+                completa</span>
+            </li>
+            <li class="list-group-item lista-group-item-hero-2 border-0 mt-4"><span class="list-gruop-hover fs-6">No
+                eres un ingeniero de software; eres un
+                "frameworker"</span>
+            </li>
+            <li class="list-group-item lista-group-item-hero-2 border-0 mt-4 border-bottom"><span
+                class="list-gruop-hover fs-6">🕸️Tendencia de desarrollo de software en 2024 👀</span>
+            </li>
+            <span class=""></span>
+          </ul>
+          <div class="">
+            <ul class="list-group list-group-hero-2 border-0">
+              <li class="list-group-item lista-group-item-hero-2 border-0"><span class="list-gruop-hover fs-6">GPT-4o:
+                  Aprenda como implementar un RAG en el nuevo
+                  modelo, paso a paso!</span>
+
+              </li>
+              <li class="list-group-item lista-group-item-hero-2 border-0 mt-3"><span class="list-gruop-hover fs-6">Por
+                  que nadie crece quierendo ser ingeniero
+                  DevOps</span>
+              </li>
+              <li class="list-group-item lista-group-item-hero-2 border-0 mt-3"><span
+                  class="list-gruop-hover fs-6">Array.reduce() tiene cabra 🐐✨</span>
+              </li>
+              <li class="list-group-item lista-group-item-hero-2 border-0 mt-3"><span
+                  class="list-gruop-hover fs-6">Diferencia entre apache Kafka, RabbitMQ</span>
+              </li>
+              <li class="list-group-item lista-group-item-hero-2 border-0 mt-4"><span class="list-gruop-hover fs-6">Las
+                  17 mejores herramientas de productivida para
+                  desarrolladores para probar</span>
+              </li>
+              <li class="list-group-item lista-group-item-hero-2 border-0 mt-4"><span
+                  class="list-gruop-hover fs-6">Mejore su productividad usando mas terminal y menos
+                  mouse (🚀)</span>
+              </li>
+              <li class="list-group-item lista-group-item-hero-2 border-0 mt-4"><span class="list-gruop-hover fs-6">Cree
+                  una increible cartera de desarrolladores de
+                  GitHub</span>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/botones.js"></script>
+    <script src="./js/module.js" type="module"></script>
+</body>
+
+</html>
